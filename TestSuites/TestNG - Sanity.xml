@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="TestComponents.Listeners"></listener>
+    </listeners>
+    <test name="MaccabiPharm">
+        <groups>
+            <run>
+                <include name="Sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests.LoginTest">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="Tests.Promotions">
+                <methods>
+                    <include name="addToCartAndEraseFromCart"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

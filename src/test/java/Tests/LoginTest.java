@@ -30,12 +30,12 @@ public class LoginTest extends BaseTest {
     @DataProvider
     public Object[][] getData () {
         HashMap<String, String> map = new HashMap<String, String> ();
-        map.put ("id", "313519589");
-        map.put ("password", "ZLG942bv");
+        map.put ("id", "*******");
+        map.put ("password", "*********");
 
         HashMap<String, String> map1 = new HashMap<String, String> ();
-        map.put ("id", "313519589");
-        map.put ("password", "ZLG942bv");
+        map.put ("id", "**********");
+        map.put ("password", "********");
 
         return new Object[][]{{map}};
     }
